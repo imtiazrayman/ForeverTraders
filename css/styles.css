@@ -296,3 +296,9 @@ h2{
   padding-top: 3rem;
 }
 
+.jumbotron{
+  text-align: center;
+  background-color:rgb(2, 4, 10) ;
+  color: white;
+}
+
