@@ -10,7 +10,7 @@
   position: relative;
   background-color: black;
   height: calc(100vh - 72px);
-  min-height: 25rem;
+  min-height: 35rem;
   width: 100%;
   overflow: hidden;
 }
@@ -228,13 +228,17 @@ h2{
   font-size: 3rem;
 
 }
+
+h3{
+  font-family: 'Dancing Script', cursive;
+}
 .testimonialimg{
-  width: 10%;
-  border-radius: 100%;
+  width: 50%;
+  
   margin-top: 2rem;
 }
 #press{
-  background-color: #ef8172;
+
   text-align: center;
   padding-bottom: 4rem;
 }
@@ -269,7 +273,6 @@ h2{
 
 
 #cta{
-  background-color: #ef8172;
   text-align: center;
 
 }
@@ -279,7 +282,7 @@ h2{
   padding-right: 2rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size:  3vw;
 }
 .bottom-download-button{
   margin: 3% 2% 5% 0%;
@@ -302,3 +305,99 @@ h2{
   color: white;
 }
 
+.title:hover{
+  color: white;
+}
+
+.titlebox{
+  padding-top: 3rem ;
+}
+
+.contacttext:hover{
+  transform: scale(1.2);
+}
+
+.titlequote:hover{
+  color: lightblue;
+}
+
+.whoarewetitle:hover{
+  transform: scale(1.2);
+
+}
+
+
+
+.titleendquote{
+  font-size: 2rem ;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+.titleendquote:hover{
+  
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em transparent blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end;
+    fill-opacity: initial;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+
+
+
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 30rem; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  align-content: center;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+
+
+
+
+.img-hover-zoom--zoom-n-pan-v img {
+  transition: transform .5s ease-in-out;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+/* The Transformation */
+.img-hover-zoom--zoom-n-pan-v:hover img {
+  transform: scale(1.25) translateY(-30%);
+}
