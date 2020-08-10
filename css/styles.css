@@ -381,13 +381,12 @@ h3{
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform 1s, filter 2s ease-in-out;
-  filter: blur(2px);
+
   transform: scale(1.2);
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-  filter: blur(0);
   transform: scale(1);
 }
 
@@ -397,8 +396,9 @@ h3{
 
 .img-hover-zoom--zoom-n-pan-v img {
   transition: transform .5s ease-in-out;
-  transform: scale(.5);
+  transform: scale(.8);
   transform-origin: 0 0;
+  align-content: center;
 }
 
 /* The Transformation */
